@@ -29,7 +29,7 @@ public class practical2 {
 
         if (D == 0) {
             System.out.println("The equation has no unique solution because D = 0");
-        } else {
+        } else{
 
             double x = Dx / D;
             double y = Dy / D;
