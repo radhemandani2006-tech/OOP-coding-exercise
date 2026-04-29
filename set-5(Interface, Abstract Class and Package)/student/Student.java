@@ -1,16 +1,19 @@
 package student;
 
 public class Student {
-    public int rollNo;
-    public String name;
 
-    public Student(int rollNo, String name) {
-        this.rollNo = rollNo;
-        this.name = name;
+    protected int rollNumber;
+    protected String studentName;
+
+    public Student(int rollNumber, String studentName) {
+
+        this.rollNumber = rollNumber;
+        this.studentName = studentName;
     }
 
-    public void displayStudent() {
-        System.out.println("Roll No: " + rollNo);
-        System.out.println("Name: " + name);
+    public void showStudentDetails() {
+
+        System.out.println("Roll Number : " + rollNumber);
+        System.out.println("Student Name : " + studentName);
     }
 }
