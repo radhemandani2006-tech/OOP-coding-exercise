@@ -3,23 +3,32 @@ package exam;
 import student.Student;
 
 public class Result extends Student {
-    int marks1, marks2, marks3;
 
-    public Result(int rollNo, String name, int m1, int m2, int m3) {
-        super(rollNo, name);
-        this.marks1 = m1;
-        this.marks2 = m2;
-        this.marks3 = m3;
+    int subject1;
+    int subject2;
+    int subject3;
+
+    public Result(int rollNumber, String studentName, int s1, int s2, int s3) {
+
+        super(rollNumber, studentName);
+
+        subject1 = s1;
+        subject2 = s2;
+        subject3 = s3;
     }
 
-    public void displayResult() {
-        super.displayStudent();
-        System.out.println("Marks 1: " + marks1);
-        System.out.println("Marks 2: " + marks2);
-        System.out.println("Marks 3: " + marks3);
-        int total = marks1 + marks2 + marks3;
-        double avg = total / 3.0;
-        System.out.println("Total: " + total);
-        System.out.println("Average: " + avg);
+    public void displayMarksheet() {
+
+        showStudentDetails();
+
+        int totalMarks = subject1 + subject2 + subject3;
+
+        double averageMarks = totalMarks / 3.0;
+
+        System.out.println("Marks in Subject 1 : " + subject1);
+        System.out.println("Marks in Subject 2 : " + subject2);
+        System.out.println("Marks in Subject 3 : " + subject3);
+        System.out.println("Total Marks : " + totalMarks);
+        System.out.println("Average Marks : " + averageMarks);
     }
 }
